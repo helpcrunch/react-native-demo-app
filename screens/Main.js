@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import {HelpCrunchWidget, hcwToggle, hcwUserAuth} from 'rn-helpcrunch';
 
-const Support = props => {
+const Main = props => {
     const widgetRef = useRef(null);
 
     // Use onReady event to user authentication
@@ -54,8 +54,8 @@ const Support = props => {
                 </Text>
                 <HelpCrunchWidget
                     ref={widgetRef}
-                    organization="PASTE_ORGANIZATION_HERE"
-                    appId="PASTE_APPID_HERE"
+                    organization="indiafilingssupport"
+                    appId="61117baa-c066-4c37-975a-89062313fc6d"
                     onReady={onReady}
                     onError={onError}
                     onMessage={onMessage}
@@ -78,4 +78,4 @@ const Support = props => {
     );
 };
 
-export default Support;
+export default Main;

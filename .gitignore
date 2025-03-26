@@ -2,3 +2,8 @@ node_modules
 ios/build
 ios/Pods
 .idea
+components
+android/.gradle
+android/app/.cxx
+android/app/build
+android/build
