@@ -54,8 +54,8 @@ const Main = props => {
                 </Text>
                 <HelpCrunchWidget
                     ref={widgetRef}
-                    organization="indiafilingssupport"
-                    appId="61117baa-c066-4c37-975a-89062313fc6d"
+                    organization="PASTE_ORGANIZATION_HERE"
+                    appId="PASTE_APPID_HERE"
                     onReady={onReady}
                     onError={onError}
                     onMessage={onMessage}
