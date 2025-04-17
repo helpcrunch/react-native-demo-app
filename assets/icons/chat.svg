@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 38 40">
+  <defs>
+    <path id="widget_icn_b1" d="M16 23l8-7h17c2.86 0 4 .614 4 3v15h-7v-9c-.108-1.166-.677-1.977-2-2H23v9c.231 1.341.801 2.146 2 2h20L30 47v-6H20c-2.712.122-3.975-.463-4-3V23zm9 2h11v7H25v-7z" fill="#ffffff"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-12 -10)">
+    <use class="hc-widget-icon-shadow" fill="#000" filter="url(#widget_icn_a1)" xlink:href="#widget_icn_b1"/>
+    <use fill="#ffffff" xlink:href="#widget_icn_b1"/>
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+{
+  "name": "testhelpcrunch",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android -- --enable-native-access=ALL-UNNAMED",
+    "ios": "react-native run-ios --simulator=\"iPhone 16\" --mode Debug",
+    "lint": "eslint .",
+    "start": "react-native start",
+    "test": "jest",
+    "generate-images": "react-native-vector-image generate",
+    "install-pods": "cd ios && pod install && cd .. ",
+    "clean-install-pods": "cd ios && rm -f Podfile.lock && rm -f .xcode.env.local && rm -rf Pods && cd .. && yarn install-pods",
+    "update-pods": "cd ios && pod install --repo-update && cd .. "
+  },
+  "dependencies": {
+    "@klarna/react-native-vector-drawable": "^0.5.1",
+    "@preact/signals-react": "^3.0.1",
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-navigation/bottom-tabs": "^6.6.0",
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/native-stack": "6.9.17",
+    "@react-navigation/stack": "6.3.20",
+    "react": "19.0.0",
+    "react-native": "0.78.0",
+    "react-native-drawer-layout": "^4.1.6",
+    "react-native-gesture-handler": "^2.24.0",
+    "react-native-reanimated": "^3.17.1",
+    "react-native-safe-area-context": "^5.3.0",
+    "react-native-screens": "^4.9.2",
+    "react-native-swipe-gestures": "^1.0.5",
+    "react-native-vector-image": "^0.4.5",
+    "react-native-webview": "^13.13.4",
+    "rn-helpcrunch": "^0.1.20"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/runtime": "^7.27.0",
+    "@react-native-community/cli": "15.0.1",
+    "@react-native-community/cli-platform-android": "15.0.1",
+    "@react-native-community/cli-platform-ios": "15.0.1",
+    "@react-native/babel-preset": "0.78.0",
+    "@react-native/eslint-config": "0.78.0",
+    "@react-native/metro-config": "0.78.0",
+    "@react-native/typescript-config": "0.78.0",
+    "@types/jest": "^29.5.13",
+    "@types/react": "^19.0.0",
+    "@types/react-test-renderer": "^19.0.0",
+    "eslint": "^8.19.0",
+    "jest": "^29.6.3",
+    "prettier": "2.8.8",
+    "react-test-renderer": "19.0.0",
+    "typescript": "5.0.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
