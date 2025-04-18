@@ -4,7 +4,26 @@ This is an basic example of integrating the Helpcrunch widget into ReactNative a
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
-## Step 1: Start Metro
+## Step 1: Prepare your widget
+
+Paste your {organization} & {appId} into the file ./components/Helpcrunch.js
+
+```js
+<HelpCrunchWidget
+  ref={widgetRef}
+  organization="PASTE_YOUR_ORGANIZATION_HERE"
+  appId="PASTE_YOUR_APPID_HERE"
+  onReady={onReady}
+  onError={onError}
+  onMessage={onMessage}
+  onChatClose={onChatClose}
+  onChatOpen={onChatOpen}
+  onCustomerMessage={onCustomerMessage}
+  onAgentMessage={onAgentMessage}
+/>
+```
+
+## Step 2: Start Metro
 
 First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
@@ -18,7 +37,7 @@ npm start
 yarn start
 ```
 
-## Step 2: Generate icons
+## Step 3: Generate icons
 
 To generate icons from .svg files, run the following command from the root of your React Native project:
 
@@ -30,7 +49,7 @@ npm run generate-images
 yarn generate-images
 ```
 
-## Step 3: Build and run your app
+## Step 4: Build and run your app
 
 With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
 
